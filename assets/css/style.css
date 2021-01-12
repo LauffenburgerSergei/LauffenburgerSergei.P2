@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ###Hearder### */
+
+header {
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    align-items : center;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap : wrap;
+    justify-content: space-around;
+    align-items : center;
+
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
