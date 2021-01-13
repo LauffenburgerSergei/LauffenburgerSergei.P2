@@ -10,15 +10,14 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-header>img {
-    margin-left: 1rem;
+header > img {
+  margin-left: 1rem;
 }
 
-header>a {
-    margin-right: 1rem;
+header > a {
+  margin-right: 1rem;
 }
 
 nav {
@@ -34,26 +33,26 @@ ul {
 }
 
 /* ###main### */
-#search_bar{
-    text-align: justify;
-    margin: 5px 16px 5px 16px; 
+#search_bar {
+  text-align: justify;
+  margin: 5px 16px 5px 16px;
 }
 
 form {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 #filters {
-    margin: 5px 16px 5px 16px;
+  margin: 5px 16px 5px 16px;
 }
 
-#filters>ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+#filters > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
