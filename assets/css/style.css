@@ -32,7 +32,12 @@ ul {
   justify-content: space-around;
 }
 
+/*########## */
+
 /* ###main### */
+
+/* ### Search_Bar ### */
+
 #search_bar {
   text-align: justify;
   margin: 5px 16px 5px 16px;
@@ -45,6 +50,10 @@ form {
   align-items: center;
 }
 
+/* ########## */
+
+/* ###Filters### */
+
 #filters {
   margin: 5px 16px 5px 16px;
 }
@@ -56,3 +65,18 @@ form {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* ########## */
+
+/* ###les plus populaires### */
+
+h2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* ###main### */
