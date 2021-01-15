@@ -3,11 +3,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Raleway#", sans-serif;
+  box-sizing: border-box;
+}
 /* ###Hearder### */
 
 header {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +21,9 @@ header > img {
 }
 
 header > a {
+  color: #0065fc;
+  font-weight: bold;
+  text-decoration: none;
   margin-right: 1rem;
 }
 
@@ -26,13 +32,39 @@ nav {
   margin: 0;
 }
 
-ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.test > li {
+  width: inherit;
+  text-align: center;
 }
 
+.test > li:hover {
+  color: #0065fc;
+  border-bottom: 2px solid #0065fc;
+  width: inherit;
+}
+
+.test {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 0 0 0.5rem 0;
+}
+
+li > a:hover {
+  color: #0065fc;
+  margin: 0 0 0.5rem 0;
+}
+
+h1 {
+  font-weight: bold;
+}
 /*########## */
 
 /* ###main### */
@@ -47,7 +79,6 @@ ul {
 form {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -61,7 +92,6 @@ form {
 
 #filters > ul {
   display: flex;
-  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -71,13 +101,11 @@ form {
 
 /* ###les plus populaires### */
 
-h2{
+h2 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 /* ########## */
@@ -97,8 +125,6 @@ h3 {
 }
 
 p {
-  
 }
-
 
 /* ###main### */
