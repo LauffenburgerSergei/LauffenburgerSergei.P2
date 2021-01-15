@@ -82,6 +82,10 @@ form {
   align-items: center;
 }
 
+.buttonsearch {
+  display: none;
+}
+
 /* ########## */
 
 /* ###Filters### */
