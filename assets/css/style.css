@@ -5,6 +5,7 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
 /* ###Hearder### */
 
 header {
@@ -67,12 +68,14 @@ h1 {
 
 /* ###main### */
 
+main {
+  margin: 1rem;
+}
+
 /* ### Search_Bar ### */
 
 #search_bar {
   text-align: justify;
-  margin: 5px 16px 5px 16px;
-
 }
 
 #search_bar > form {
@@ -82,7 +85,6 @@ h1 {
 }
 
 form {
-  
   display: flex;
   justify-content: center;
   align-self: center;
@@ -114,9 +116,7 @@ form {
   border-radius: 10px;
   height: 40px;
   width: 40px;
-  margin-right: 0px;
-  position: absolute;
-  right: 50px;
+  margin-right: 50px;
   border: none;
 }
 
@@ -135,19 +135,30 @@ form {
 
 /* ###Filters### */
 
-#filters {
-  margin: 5px 16px 5px 16px;
-}
-
 #filters > ul {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
+.list_items > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border: 2px #f2f2f2 solid;
+  border-left: none;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+}
 
-.fa-money-bill-wave{
+li > p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fas-icon {
   background-color: #d6ecfd;
   width: 30px;
   height: 30px;
@@ -157,11 +168,13 @@ form {
   border-radius: 50%;
 }
 
-.fa-money-bill-wave {
+.fas-icon {
   color: #0065fc;
 }
 
-
+#filters > p {
+  margin-top: 0.5rem;
+}
 
 /* ########## */
 
