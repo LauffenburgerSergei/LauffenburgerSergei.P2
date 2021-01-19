@@ -4,7 +4,6 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  
 }
 /* ###Hearder### */
 
@@ -73,9 +72,56 @@ h1 {
 #search_bar {
   text-align: justify;
   margin: 5px 16px 5px 16px;
+
+}
+
+#search_bar > form {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 form {
+  
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
+
+#search {
+  height: 40px;
+  width: 250px;
+  border-left: none;
+  border-right: none;
+  border: 2px #f2f2f2 solid;
+}
+
+.btn-search {
+  background-color: #0065fc;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 0px;
+  position: absolute;
+  right: 50px;
+  border: none;
+}
+
+.fa-search {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +172,5 @@ a {
 h3 {
   margin: 1rem;
 }
-
-
 
 /* ###main### */
