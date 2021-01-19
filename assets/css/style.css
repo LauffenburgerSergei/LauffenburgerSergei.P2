@@ -146,6 +146,23 @@ form {
   justify-content: space-between;
 }
 
+
+.fa-money-bill-wave{
+  background-color: #d6ecfd;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-money-bill-wave {
+  color: #0065fc;
+}
+
+
+
 /* ########## */
 
 /* ###les plus populaires### */
