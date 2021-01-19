@@ -74,6 +74,10 @@ main {
 
 /* ### Search_Bar ### */
 
+#search_bar > p {
+  margin-top: 0.5rem;
+}
+
 #search_bar {
   text-align: justify;
 }
@@ -135,6 +139,11 @@ form {
 
 /* ###Filters### */
 
+#filters {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 #filters > ul {
   display: flex;
   flex-wrap: wrap;
@@ -151,6 +160,10 @@ form {
   border-left: none;
   border-radius: 50px;
   margin-top: 0.5rem;
+}
+
+.list_items {
+  font-weight: bold;
 }
 
 li > p {
@@ -172,8 +185,14 @@ li > p {
   color: #0065fc;
 }
 
+.blackiconcolor {
+  color: white;
+  border: #f2f2f2;
+  border-radius: 50px;
+}
+
 #filters > p {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* ########## */
@@ -185,14 +204,26 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 /* ########## */
 
 /* ###Hébergements### */
 
-a {
-  margin: 1rem;
+#accommodation > h2 {
+  margin-top: 10px;
+}
+
+.show_more {
+  font-weight: bold;
+  
+}
+
+section > a {
+  text-decoration: none;
+  color: black;
+  margin-top: 1.5rem;
 }
 
 /* ########## */
@@ -200,6 +231,10 @@ a {
 /* ###Footers### */
 
 h3 {
+  margin: 1rem;
+}
+
+footer > ul > li {
   margin: 1rem;
 }
 
