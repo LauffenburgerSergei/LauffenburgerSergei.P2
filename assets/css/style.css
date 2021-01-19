@@ -17,6 +17,8 @@ header {
 
 header > img {
   margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 header > a {
@@ -63,6 +65,7 @@ li > a:hover {
 
 h1 {
   font-weight: bold;
+  margin-top: 1.5rem;
 }
 /*########## */
 
@@ -76,6 +79,7 @@ main {
 
 #search_bar > p {
   margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 #search_bar {
@@ -140,8 +144,7 @@ form {
 /* ###Filters### */
 
 #filters {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 #filters > ul {
@@ -153,6 +156,7 @@ form {
 
 .list_items > li {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 30px;
@@ -185,10 +189,23 @@ li > p {
   color: #0065fc;
 }
 
-.blackiconcolor {
-  color: white;
-  border: #f2f2f2;
-  border-radius: 50px;
+.fa-info{
+  border: 2px #f2f2f2 solid;
+  color: #0065fc;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+}
+
+.texte_information {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #filters > p {
@@ -204,7 +221,8 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  margin-bottom: 0.1rem;
+  margin-top: 2rem; 
 }
 
 /* ########## */
@@ -212,12 +230,24 @@ h2 {
 /* ###Hébergements### */
 
 #accommodation > h2 {
-  margin-top: 10px;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: black;
+}
+
+p,
+div {
+  color: black;
+}
+
+figcaption {
+  margin: 1rem;
 }
 
 .show_more {
   font-weight: bold;
-  
 }
 
 section > a {
@@ -225,12 +255,11 @@ section > a {
   color: black;
   margin-top: 1.5rem;
 }
-
 /* ########## */
 
 /* ###Footers### */
 
-h3 {
+.titles_footer > h3 {
   margin: 1rem;
 }
 
