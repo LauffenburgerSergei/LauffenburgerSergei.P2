@@ -6,8 +6,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
+}
+
+header > img {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ###Hearder### */
@@ -19,16 +25,9 @@ header {
   align-items: center;
 }
 
-header > img {
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 header > a {
   color: #0065fc;
   font-weight: bold;
-  text-decoration: none;
   margin-right: 1rem;
 }
 
@@ -37,22 +36,22 @@ nav {
   margin: 0;
 }
 
-.test > li {
+.navmenu > li {
   width: inherit;
   text-align: center;
+  border-bottom: 2px solid #f2f2f2;
 }
 
-.test > li:hover {
+.navmenu > li:hover {
+  width: inherit;
   color: #0065fc;
   border-bottom: 2px solid #0065fc;
-  width: inherit;
 }
 
-.test {
+.navmenu {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  border-bottom: 2px solid #f2f2f2;
 }
 
 li > a {
@@ -124,7 +123,7 @@ form {
 
 .btn-search {
   background-color: #0065fc;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   height: 40px;
   width: 40px;
   margin-right: 50px;
@@ -159,7 +158,6 @@ form {
 
 .list_items > li {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 30px;
@@ -180,6 +178,7 @@ li > p {
 
 .fas-icon {
   background-color: #d6ecfd;
+  color: #0065fc;
   width: 30px;
   height: 30px;
   display: flex;
@@ -188,11 +187,7 @@ li > p {
   border-radius: 50%;
 }
 
-.fas-icon {
-  color: #0065fc;
-}
-
-.fa-info{
+.fa-info {
   border: 2px #f2f2f2 solid;
   color: #0065fc;
   width: 25px;
@@ -201,7 +196,6 @@ li > p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  
 }
 
 .texte_information {
@@ -225,7 +219,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.1rem;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 /* ########## */
