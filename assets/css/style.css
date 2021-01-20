@@ -52,7 +52,6 @@ nav {
 }
 
 li > a {
-  text-decoration: none;
   color: black;
   display: block;
   margin: 0 0 0.5rem 0;
@@ -251,7 +250,6 @@ figcaption {
 }
 
 section > a {
-  text-decoration: none;
   color: black;
   margin-top: 1.5rem;
 }
