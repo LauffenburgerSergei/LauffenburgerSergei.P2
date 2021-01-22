@@ -130,9 +130,7 @@ form {
 
 #search {
   height: 40px;
-  width: 250px;
-  border-left: none;
-  border-right: none;
+  width: 250px; 
   border: 2px #f2f2f2 solid;
 }
 
@@ -275,6 +273,8 @@ h2 {
   border-radius: 20px 0 0 20px;
 }
 
+
+
 /* ########## */
 
 /* ###Hébergements### */
@@ -317,12 +317,14 @@ article {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
-.figure {
+.card_accommodation {
+  display: flex;
   height: 200px;
-  width: 100%;
-  border-radius: 1rem;
+  width: 360;
+  border-radius: 20px;
   background-color: white;
   border: 3px solid #f2f2f2;
 }
@@ -336,18 +338,25 @@ article:hover {
   -moz-transform: scale(1.02);
 }
 .img_Card_accommodation {
-  font-size: 0;
-  height: 200px !important;
-  width: 360px !important;  
-  background-size: 110%;
+  height: 100%;
+  width: 240px;  
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 20px 0 0 20px;
+}
+
+.star {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
 }
 
 .information_card_accommodation {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  
 }
 
 #activity {
