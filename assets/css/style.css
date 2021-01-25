@@ -62,6 +62,8 @@ header nav ul li {
 
 header nav ul:hover > li {
   flex-basis: 50%;
+  text-align: center;
+  padding: 15px 0;
   border-bottom: 2px solid #0065fc;
 }
 
@@ -233,10 +235,7 @@ h3 {
 
 /* ###les plus populaires### */
 
-aside {
-  padding-left: 10%;
-  padding-right: 5%;
-}
+
 
 #popular {
   padding-bottom: 30px;
@@ -260,6 +259,7 @@ aside {
   margin-bottom: 10px;
   padding: 5px;
   width: 90%;
+  margin-left: 5%;
 }
 
 #popular article a figure {
