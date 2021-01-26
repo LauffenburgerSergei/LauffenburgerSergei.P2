@@ -283,92 +283,91 @@ h3 {
 #popular article a figure figcaption {
   width: 60%;
   height: 100%;
-  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 #popular article a figure figcaption div {
   margin-top: auto;
+  font-size: 0.7rem;
+letter-spacing: 1px;
+}
+
+#popular article:hover {
+  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
 }
 
 /* ########## */
 
 /* ###Hébergements### */
 
+#accommodation {
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
 #accommodation > h2 {
-  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
-p,
-div {
-  color: black;
+#accommodation article {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px #c0c0c0;
+  border-radius: 1rem;
+  height: 130px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 90%;
+  height: 160PX;
+  margin-left: 5%;
 }
 
-figcaption {
-  margin: 1rem;
-}
-
-.show_more {
-  font-weight: bold;
-}
-
-section > a {
-  color: black;
-  margin-top: 1.5rem;
-}
-
-.accomodation {
+#accommodation article a figure {
   display: flex;
   flex-direction: column;
-}
-
-.accomodation > article {
-  height: 200px;
-  width: 460px;
-}
-
-article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 1rem;
+  height: 125px;
 }
 
-.card_accommodation {
+#accommodation article a figure div {
+  width: 40%;
   display: flex;
-  height: 200px;
-  width: 360;
-  border-radius: 20px;
-  background-color: white;
-  border: 3px solid #f2f2f2;
+  padding-bottom: 4px;
 }
 
-article:hover {
-  transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-}
-.img_Card_accommodation {
+#accommodation article a figure div img {
+  width: 100%;
   height: 100%;
-  width: 240px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 20px 0 0 20px;
+  border-radius: 1rem 0 0 1rem;
+  object-fit: cover;
 }
 
-.star {
-  display: flex;
-  align-items: flex-end;
-  align-content: flex-end;
+#accommodation article a figure figcaption {
+  width: 60%;
+  height: 100%;
+  margin: 0.5rem;
 }
 
-.information_card_accommodation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+#accommodation article a figure figcaption div {
+  margin-top: auto;
+  font-size: 0.7rem;
+letter-spacing: 1px;
+}
+
+#accommodation article:hover {
+  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
 }
 
 #activity {
@@ -385,7 +384,7 @@ article:hover {
   border: 2px solid #f2f2f2;
   margin-bottom: 1rem;
   border-radius: 1rem;
-  box-shadow: 2px 2px 10px #f2f2f2;
+  box-shadow: 2px 2px 5px #f2f2f2;
 }
 
 .img_activity {
