@@ -443,7 +443,7 @@ h3 {
   border-radius: 20px 20px 0 0;
 }
 
-#accommodation article:hover {
+#activity article:hover {
   transform: scale(1.05);
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
