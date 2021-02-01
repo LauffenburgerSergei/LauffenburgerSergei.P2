@@ -15,6 +15,10 @@ a {
   color: black;
 }
 
+b {
+  font-weight: bold;
+}
+
 section,
 aside {
   padding: 20px 15px;
@@ -33,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px 0;
 }
 
@@ -303,8 +307,8 @@ header nav ul li:hover > a {
 
 #accommodation article a figure figcaption {
   flex-basis: 60%;
-
   margin: 0.5rem;
+  
 }
 
 #accommodation article a figure figcaption div {
@@ -314,8 +318,17 @@ header nav ul li:hover > a {
   font-size: 0.7rem;
   letter-spacing: 1px;
   margin-top: auto;
+  
 }
 
+#accommodation article a figure figcaption h3 {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+#accommodation article a figure figcaption p {
+  margin-bottom: 0.5rem;
+}
 #accommodation article:hover {
   transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -339,8 +352,7 @@ header nav ul li:hover > a {
   flex-direction: column;
   box-shadow: 2px 2px 5px #c0c0c0;
   border-radius: 1rem;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-bottom: 25px;
 }
 
 #activity article a {
@@ -350,15 +362,19 @@ header nav ul li:hover > a {
 #activity article a figure div {
   width: 100%;
   display: flex;
-  padding-bottom: 4px;
   flex-direction: column;
+  
 }
 
 #activity article a figure div img {
   height: 150px;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
+}
+
+#activity article a figure figcaption {
+  margin: 0.5rem 0 0.5rem 1rem;
 }
 
 #activity article:hover {
