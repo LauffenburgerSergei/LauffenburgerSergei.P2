@@ -8,30 +8,37 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  width: 100%;
-}
-
-h1 {
-  margin-top: 1rem;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 1rem;
-}
-
-h2 {
-  font-size: 1.35rem;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
 }
 
 a {
   text-decoration: none;
   color: black;
 }
+
+section, aside {
+  padding: 30px 15px;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+ 
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 20px;
+
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+
 
 .fa-star {
   color: #0065fc;
@@ -46,11 +53,6 @@ a {
 /*###############################################*/
 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 15px;
 }
 
@@ -200,6 +202,7 @@ header nav ul li:hover > a {
 }
 
 #filters ul li:hover {
+  color: #0065fc
   transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -409,7 +412,7 @@ header nav ul li:hover > a {
   -moz-transform: scale(1.05);
 }
 
-.show_more {
+#accommodation > a {
   font-weight: bold;
 }
 

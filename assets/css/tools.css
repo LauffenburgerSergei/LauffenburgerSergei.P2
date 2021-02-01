@@ -2,5 +2,20 @@
     display: flex;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-dir-row {
+    flex-direction: row;
+}
+.jus-cont-spa-bet {
+    justify-content: space-between;
+}
+
+.ali-ite-center {
+    align-items: center;
+}
+
 
 
