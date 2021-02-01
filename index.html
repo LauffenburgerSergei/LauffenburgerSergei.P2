@@ -20,8 +20,8 @@
   <header class="d-flex f-wrap f-dir-row jus-cont-spa-bet ali-ite-center">
     <img src="./assets/images/logo/Reservia.svg" alt="Logo de Reservia" />
     <a href="#">S'inscrire</a>
-    <nav>
-      <ul>
+    <nav class="f-bas-100">
+      <ul class="d-flex jus-cont-spa-bet">
         <li>
           <a href="#">Hébergements</a>
         </li>
@@ -38,7 +38,7 @@
     <section id="search_bar">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
-      <form action="#" method="POST">
+      <form action="#" method="POST" class="d-flex f-bas-100">
         <label for="search"><i class="fas fa-map-marker-alt"></i></label>
         <input type="text" name="search" id="search" placeholder="Marseille, France" />
         <button type="submit" id="btn_search">
@@ -49,32 +49,27 @@
     </section>
     <!--Filtres-->
     <section id="filters">
-      <h2>Filtres</h2>
-      <ul>
+      <h2 class="d-flex f-wrap jus-cont-spa-bet ali-ite-center">Filtres</h2>
+      <ul class="d-flex f-wrap">
         <li>
-          <i class="fas fa-money-bill-wave fas-icon"></i>
+          <i class="fas fa-money-bill-wave"></i>
           <p>Économique</p>
         </li>
         <li>
-          <i class="fas fa-child fas-icon"></i>
+          <i class="fas fa-child"></i>
           <p>Familial</p>
         </li>
         <li>
-          <i class="fas fa-heart fas-icon"></i>
+          <i class="fas fa-heart"></i>
           <p>Romantique</p>
         </li>
         <li>
-          <i class="fas fa-dog fas-icon"></i>
+          <i class="fas fa-dog"></i>
           <p>Animaux autorisés</p>
         </li>
       </ul>
-      <p>
-      <div>
-        <span><i class="fas fa-info"></i></span>
-        <p>Plus de 500 logements sont disponibles dans
-          cette ville</p>
-      </div>
-      </p>
+      <p class="d-flex"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
+        cette ville</p>
     </section>
     <div>
       <!--Populaires-->

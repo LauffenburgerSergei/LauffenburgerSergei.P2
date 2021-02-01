@@ -17,5 +17,7 @@
     align-items: center;
 }
 
-
+.f-bas-100 {
+    flex-basis: 100%;
+}
 
