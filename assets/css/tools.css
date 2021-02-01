@@ -9,6 +9,11 @@
 .f-dir-row {
     flex-direction: row;
 }
+
+.f-dir-col {
+    flex-direction: column;
+}
+
 .jus-cont-spa-bet {
     justify-content: space-between;
 }
