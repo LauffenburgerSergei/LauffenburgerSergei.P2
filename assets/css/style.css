@@ -238,7 +238,7 @@ header nav ul li:hover > a {
 }
 
 #popular article a figure figcaption {
-  width: 60%;
+  flex-basis: 60%;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
