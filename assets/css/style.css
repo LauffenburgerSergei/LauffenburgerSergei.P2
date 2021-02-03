@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: 700;
   padding: 10px 0;
 }
@@ -120,10 +120,7 @@ header nav ul li:hover > a {
   font-weight: bold;
   border: 2px solid #f2f2f2;
   padding-left: 5px;
-}
-
-#search_bar form input :hover {
-  border: 0;
+  outline: none;
 }
 
 #btn_search {
@@ -133,7 +130,7 @@ header nav ul li:hover > a {
   border: none;
   border-radius: 0 1rem 1rem 0;
   padding: 0 1rem;
-  font-size: 1rem;
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -218,10 +215,7 @@ header nav ul li:hover > a {
   flex-direction: column;
 }
 
-#popular h2 {
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-}
+
 
 #popular article {
   background-color: #ffffff;
@@ -233,7 +227,7 @@ header nav ul li:hover > a {
 
 #popular article a figure div {
   display: flex;
-  flex-basis: 65%;
+  flex-basis: 40%;
 }
 
 #popular article a figure div img {
@@ -246,14 +240,14 @@ header nav ul li:hover > a {
 }
 
 #popular article a figure figcaption {
-  flex-basis: 100%;
+  width: 60%;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
 }
 
 #popular article a figure figcaption div {
-  font-size: 0.7rem;
+  font-size: 0.7em;
   letter-spacing: 1px;
   align-items: flex-end;
 }
@@ -270,9 +264,7 @@ header nav ul li:hover > a {
 /*################# Hébergement #################*/
 /*###############################################*/
 
-#accommodation > h2 {
-  padding-top: 1rem;
-}
+
 
 #accommodation article {
   background-color: #ffffff;
@@ -288,13 +280,14 @@ header nav ul li:hover > a {
 
 #accommodation article a figure {
   flex-basis: 100%;
+  flex-direction: column;
 }
 
 #accommodation article a figure div {
-  flex-basis: 100%;
+  width: 100%;
   display: flex;
   padding-bottom: 4px;
-  flex-direction: column;
+  
 }
 
 #accommodation article a figure div img {
@@ -305,7 +298,7 @@ header nav ul li:hover > a {
 }
 
 #accommodation article a figure figcaption {
-  flex-basis: 60%;
+  width: 60%;
   margin: 0.5rem;
 }
 
@@ -313,7 +306,7 @@ header nav ul li:hover > a {
   display: flex;
   flex-direction: row;
   margin-top: auto;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   letter-spacing: 1px;
   margin-top: auto;
 }
@@ -336,7 +329,7 @@ header nav ul li:hover > a {
 
 #accommodation > a {
   font-weight: bold;
-  padding-top: 1rem;
+  
 }
 
 /*###############################################*/
@@ -356,10 +349,13 @@ header nav ul li:hover > a {
   width: 100%;
 }
 
+#activity article a figure {
+  flex-direction: column;
+}
+
 #activity article a figure div {
   width: 100%;
   display: flex;
-  flex-direction: column;
 }
 
 #activity article a figure div img {
