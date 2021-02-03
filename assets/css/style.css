@@ -41,12 +41,12 @@ h3 {
   padding: 10px 0;
 }
 
-.fa-star {
-  color: #0065fc;
+i {
+  color: #c0c0c0;
 }
 
-.fas0 {
-  color: #c0c0c0;
+.active {
+  color: #0065fc;
 }
 
 /*###############################################*/
@@ -158,6 +158,15 @@ header nav ul li:hover > a {
   margin-right: 0.7rem;
 }
 
+#filters ul li i {
+  background-color: #d6ecfd;
+  color: #0065fc;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 #filters ul li:hover {
   transform: scale(1.02);
   -ms-transform: scale(1.02);
@@ -167,6 +176,7 @@ header nav ul li:hover > a {
   background: #d6ecfd;
   border: 2px solid #d6ecfd;
   box-shadow: 0 15px 10px -15px black;
+  cursor: pointer;
 }
 
 #filters li > p {
@@ -177,17 +187,7 @@ header nav ul li:hover > a {
   margin-right: 15px;
 }
 
-#filters ul li i {
-  background-color: #d6ecfd;
-  color: #0065fc;
-  width: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  text-align: center;
-}
-
 #filters > p {
-  line-height: 1.5em;
   margin: 16px 0;
   align-items: flex-start;
 }
@@ -212,10 +212,7 @@ header nav ul li:hover > a {
 
 #popular aside {
   display: flex;
-  flex-direction: column;
 }
-
-
 
 #popular article {
   background-color: #ffffff;
@@ -223,6 +220,7 @@ header nav ul li:hover > a {
   margin: 10px 0;
   padding: 5px;
   box-shadow: 4px 4px 6px #aaaaaa;
+  width: 100%;
 }
 
 #popular article a figure div {
@@ -234,8 +232,8 @@ header nav ul li:hover > a {
   display: block;
   border-radius: 18px 0 0 18px;
   height: 150px;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -264,8 +262,6 @@ header nav ul li:hover > a {
 /*################# Hébergement #################*/
 /*###############################################*/
 
-
-
 #accommodation article {
   background-color: #ffffff;
   border-radius: 20px;
@@ -274,20 +270,14 @@ header nav ul li:hover > a {
   box-shadow: 4px 4px 6px #aaaaaa;
 }
 
-#accommodation article a {
-  flex-basis: 100%;
-}
-
 #accommodation article a figure {
   flex-basis: 100%;
   flex-direction: column;
 }
 
 #accommodation article a figure div {
-  width: 100%;
   display: flex;
   padding-bottom: 4px;
-  
 }
 
 #accommodation article a figure div img {
@@ -298,7 +288,7 @@ header nav ul li:hover > a {
 }
 
 #accommodation article a figure figcaption {
-  width: 60%;
+  width: 100%;
   margin: 0.5rem;
 }
 
@@ -329,7 +319,6 @@ header nav ul li:hover > a {
 
 #accommodation > a {
   font-weight: bold;
-  
 }
 
 /*###############################################*/
@@ -345,16 +334,11 @@ header nav ul li:hover > a {
   margin-bottom: 25px;
 }
 
-#activity article a {
-  width: 100%;
-}
-
 #activity article a figure {
   flex-direction: column;
 }
 
 #activity article a figure div {
-  width: 100%;
   display: flex;
 }
 
@@ -367,6 +351,7 @@ header nav ul li:hover > a {
 
 #activity article a figure figcaption {
   margin: 0.5rem 0 0.5rem 1rem;
+  width: 100%;
 }
 
 #activity article:hover {
