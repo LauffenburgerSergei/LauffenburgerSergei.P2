@@ -1,0 +1,27 @@
+.d-flex {
+  display: flex;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.f-dir-row {
+  flex-direction: row;
+}
+
+.f-dir-col {
+  flex-direction: column;
+}
+
+.jus-cont-spa-bet {
+  justify-content: space-between;
+}
+
+.ali-ite-center {
+  align-items: center;
+}
+
+.f-bas-100 {
+  flex-basis: 100%;
+}
