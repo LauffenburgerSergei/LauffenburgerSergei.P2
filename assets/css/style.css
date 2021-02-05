@@ -350,7 +350,7 @@ header nav ul li:hover > a {
 }
 
 #activity article a figure figcaption {
-  margin: 0.5rem 0 0.5rem 1rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
   width: 100%;
 }
 
@@ -377,4 +377,109 @@ footer li {
 
 footer h3 {
   margin-top: 1rem;
+}
+
+/*************************************************/
+/****************** Media Querys *****************/
+/*************************************************/
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+/*###############################################*/
+/*################# Hébergement #################*/
+/*###############################################*/
+
+  #accommodation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #accommodation h2 {
+    flex-basis: 100%;
+  }
+
+  #accommodation article {
+    flex-basis: 45%;
+  }
+
+  #accommodation > a {
+    flex-basis: 100%;
+  }
+
+/*###############################################*/
+/*################# activitées ##################*/
+/*###############################################*/
+
+  #activity h2 {
+    flex-basis: 100%;
+  }
+
+  #activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .card_one {
+    width: 47%;
+    height: 432px;
+  }
+
+  .card_one figure {
+    height: 432px;
+  }
+
+  .card_one article a figure div img {
+    height: 380px !important;
+  }
+
+  .card_two_and_three {
+    width: 47%;
+    justify-content: space-between;
+  }
+
+  .card_four {
+    width: 47%;
+    height: 432px;
+  }
+
+  .card_four figure {
+    height: 432px;
+  }
+
+  .card_four article a figure div img {
+    height: 380px !important;
+  }
+
+  .card_five_and_six {
+    width: 47%;
+    justify-content: space-between;
+  }
+/*###############################################*/
+/*################## footers ####################*/
+/*###############################################*/
+
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bloc {
+    display: block;
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bloc {
+    display: block;
+    clear: both;
+  }
 }
