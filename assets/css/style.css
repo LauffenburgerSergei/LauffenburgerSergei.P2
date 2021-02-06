@@ -319,6 +319,7 @@ header nav ul li:hover > a {
 
 #accommodation > a {
   font-weight: bold;
+  margin-top: 1.5rem;
 }
 
 /*###############################################*/
@@ -573,9 +574,137 @@ footer h3 {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .bloc {
-    display: block;
-    clear: both;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /*###############################################*/
+  /*################# search_bar ##################*/
+  /*###############################################*/
+
+  .fa-search {
+    display: none;
+  }
+
+  #btn_search span {
+    display: flex;
+  }
+
+  /*###############################################*/
+  /*########## accommodation and popular ##########*/
+  /*###############################################*/
+
+  .accommodation_and_popular {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /*###############################################*/
+  /*############# les plus populaires #############*/
+  /*###############################################*/
+
+  #popular {
+    border-radius: 20px 20px 20px 20px;
+    margin: 0.5rem;
+  }
+
+  /*###############################################*/
+  /*################# Hébergement #################*/
+  /*###############################################*/
+
+  #accommodation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0.5rem;
+  }
+
+  #accommodation h2 {
+    flex-basis: 100%;
+  }
+
+  #accommodation article {
+    flex-basis: 30%;
+  }
+
+  #accommodation > a {
+    flex-basis: 100%;
+  }
+
+  /*###############################################*/
+  /*################# activitées ##################*/
+  /*###############################################*/
+
+  
+
+  #activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+  }
+  
+  #activity h2 {
+    flex-basis: 100%;
+  }
+  
+  
+  
+
+  .card_one {
+    width: 23%;
+    height: 432px;
+    
+  }
+
+  .card_one figure {
+    height: 432px;
+  }
+
+  .card_one article a figure div img {
+    height: 380px !important;
+  }
+
+  .card_two_and_three {
+    width: 23%;
+    justify-content: space-between;
+    
+  }
+
+  .card_four {
+    width: 23%;
+    height: 432px;
+    
+  }
+
+  .card_four figure {
+    height: 432px;
+  }
+
+  .card_four article a figure div img {
+    height: 380px !important;
+  }
+
+  .card_five_and_six {
+    width: 23%;
+    justify-content: space-between;
+    
+  }
+
+  /*###############################################*/
+  /*################## footers ####################*/
+  /*###############################################*/
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer div {
+    width: 33%;
+    text-align: center;
   }
 }
