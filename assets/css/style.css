@@ -634,28 +634,20 @@ footer h3 {
   /*################# activitées ##################*/
   /*###############################################*/
 
-  
-
   #activity {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
   }
-  
+
   #activity h2 {
     flex-basis: 100%;
   }
-  
-  
-  
 
   .card_one {
     width: 23%;
     height: 432px;
-    
   }
 
   .card_one figure {
@@ -669,13 +661,11 @@ footer h3 {
   .card_two_and_three {
     width: 23%;
     justify-content: space-between;
-    
   }
 
   .card_four {
     width: 23%;
     height: 432px;
-    
   }
 
   .card_four figure {
@@ -689,7 +679,6 @@ footer h3 {
   .card_five_and_six {
     width: 23%;
     justify-content: space-between;
-    
   }
 
   /*###############################################*/
