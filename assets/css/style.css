@@ -209,6 +209,8 @@ header nav ul li:hover > a {
 
 #popular {
   background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 #popular aside {
@@ -222,6 +224,7 @@ header nav ul li:hover > a {
   padding: 5px;
   box-shadow: 4px 4px 6px #aaaaaa;
   width: 100%;
+  flex-basis: 75%;
 }
 
 #popular article a figure div {
@@ -334,6 +337,7 @@ header nav ul li:hover > a {
   box-shadow: 2px 2px 5px #c0c0c0;
   border-radius: 1rem;
   margin-bottom: 25px;
+  flex-basis: 50%;
 }
 
 #activity article a figure {
@@ -424,7 +428,7 @@ footer h3 {
   }
 
   .card_one {
-    width: 47%;
+    flex-basis: 47%;
     height: 432px;
   }
 
@@ -438,7 +442,8 @@ footer h3 {
 
   .card_two_and_three {
     width: 47%;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
   }
 
   .card_four {
@@ -483,6 +488,26 @@ footer h3 {
 
   #btn_search span {
     display: flex;
+  }
+
+  /*###############################################*/
+  /*############# les plus populaire ##############*/
+  /*###############################################*/
+
+  
+
+  #popular aside {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  #popular article {
+    flex-basis: 75%;
+    align-items: center;
+    width: 75%;
+    align-self: center;
   }
 
   /*###############################################*/
