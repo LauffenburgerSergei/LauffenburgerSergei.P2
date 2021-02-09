@@ -41,7 +41,7 @@ h3 {
   padding: 10px 0;
 }
 
-i {
+article figure figcaption div i {
   color: #c0c0c0;
 }
 
@@ -58,7 +58,7 @@ header {
 }
 
 header img {
-  margin-left: 20px;
+  margin-left: 12px;
 }
 
 header > a {
@@ -150,7 +150,7 @@ header nav ul li:hover > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  height: 48px;
   border: 2px solid #f2f2f2;
   border-radius: 50px;
   margin-top: 0.7rem;
@@ -161,8 +161,8 @@ header nav ul li:hover > a {
 #filters ul li i {
   background-color: #d6ecfd;
   color: #0065fc;
-  width: 40px;
-  line-height: 40px;
+  width: 48px;
+  line-height: 48px;
   border-radius: 50%;
   text-align: center;
 }
@@ -190,10 +190,11 @@ header nav ul li:hover > a {
 #filters > p {
   margin: 16px 0;
   align-items: flex-start;
+  line-height: 1.5em;
 }
 
 #filters p i {
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   color: #0065fc;
   border-radius: 50%;
   flex: 0 0 1.5em;
@@ -208,6 +209,8 @@ header nav ul li:hover > a {
 
 #popular {
   background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 #popular aside {
@@ -221,6 +224,7 @@ header nav ul li:hover > a {
   padding: 5px;
   box-shadow: 4px 4px 6px #aaaaaa;
   width: 100%;
+  flex-basis: 75%;
 }
 
 #popular article a figure div {
@@ -230,7 +234,7 @@ header nav ul li:hover > a {
 
 #popular article a figure div img {
   display: block;
-  border-radius: 18px 0 0 18px;
+  border-radius: 17px 0 0 17px;
   height: 150px;
   object-fit: cover;
   width: 100%;
@@ -284,7 +288,7 @@ header nav ul li:hover > a {
   height: 120px;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 17px 17px 0 0;
 }
 
 #accommodation article a figure figcaption {
@@ -330,31 +334,26 @@ header nav ul li:hover > a {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 5px #c0c0c0;
+  box-shadow: 2px 2px 5px #757373;
   border-radius: 1rem;
   margin-bottom: 25px;
 }
-
 #activity article a figure {
   flex-direction: column;
 }
-
 #activity article a figure div {
   display: flex;
 }
-
 #activity article a figure div img {
   height: 150px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-
 #activity article a figure figcaption {
   margin: 0.5rem 0 0.5rem 0.5rem;
   width: 100%;
 }
-
 #activity article:hover {
   transform: scale(1.02);
   -ms-transform: scale(1.02);
@@ -384,7 +383,7 @@ footer h3 {
 /****************** Media Querys *****************/
 /*************************************************/
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) {
   /*###############################################*/
   /*################# Hébergement #################*/
   /*###############################################*/
@@ -414,7 +413,6 @@ footer h3 {
   #activity h2 {
     flex-basis: 100%;
   }
-
   #activity {
     display: flex;
     flex-direction: row;
@@ -440,6 +438,14 @@ footer h3 {
     justify-content: space-between;
   }
 
+  .card_two_img {
+    height: 185px !important;
+  }
+
+  .card_three_img {
+    height: 115px !important;
+  }
+
   .card_four {
     width: 47%;
     height: 432px;
@@ -457,6 +463,7 @@ footer h3 {
     width: 47%;
     justify-content: space-between;
   }
+
   /*###############################################*/
   /*################## footers ####################*/
   /*###############################################*/
@@ -471,7 +478,7 @@ footer h3 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   /*###############################################*/
   /*################# search_bar ##################*/
   /*###############################################*/
@@ -485,76 +492,27 @@ footer h3 {
   }
 
   /*###############################################*/
+  /*############# les plus populaire ##############*/
+  /*###############################################*/
+
+  #popular aside {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #popular article {
+    flex-basis: 75%;
+    align-items: center;
+    width: 75%;
+    align-self: center;
+  }
+
+  /*###############################################*/
   /*################# Hébergement #################*/
   /*###############################################*/
 
-  #accommodation {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  #accommodation h2 {
-    flex-basis: 100%;
-  }
-
   #accommodation article {
     flex-basis: 30%;
-  }
-
-  #accommodation > a {
-    flex-basis: 100%;
-  }
-
-  /*###############################################*/
-  /*################# activitées ##################*/
-  /*###############################################*/
-
-  #activity h2 {
-    flex-basis: 100%;
-  }
-
-  #activity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .card_one {
-    width: 47%;
-    height: 432px;
-  }
-
-  .card_one figure {
-    height: 432px;
-  }
-
-  .card_one article a figure div img {
-    height: 380px !important;
-  }
-
-  .card_two_and_three {
-    width: 47%;
-    justify-content: space-between;
-  }
-
-  .card_four {
-    width: 47%;
-    height: 432px;
-  }
-
-  .card_four figure {
-    height: 432px;
-  }
-
-  .card_four article a figure div img {
-    height: 380px !important;
-  }
-
-  .card_five_and_six {
-    width: 47%;
-    justify-content: space-between;
   }
 
   /*###############################################*/
@@ -565,7 +523,6 @@ footer h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   footer div {
@@ -574,7 +531,7 @@ footer h3 {
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) {
   /*###############################################*/
   /*################# search_bar ##################*/
   /*###############################################*/
@@ -585,15 +542,6 @@ footer h3 {
 
   #btn_search span {
     display: flex;
-  }
-
-  /*###############################################*/
-  /*########## accommodation and popular ##########*/
-  /*###############################################*/
-
-  .accommodation_and_popular {
-    display: flex;
-    flex-direction: row-reverse;
   }
 
   /*###############################################*/
@@ -634,53 +582,20 @@ footer h3 {
   /*################# activitées ##################*/
   /*###############################################*/
 
-  #activity {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  #activity h2 {
-    flex-basis: 100%;
-  }
-
   .card_one {
-    width: 23%;
-    height: 432px;
-  }
-
-  .card_one figure {
-    height: 432px;
-  }
-
-  .card_one article a figure div img {
-    height: 380px !important;
+    width: 24%;
   }
 
   .card_two_and_three {
-    width: 23%;
-    justify-content: space-between;
+    width: 22%;
   }
-
   .card_four {
-    width: 23%;
-    height: 432px;
-  }
-
-  .card_four figure {
-    height: 432px;
-  }
-
-  .card_four article a figure div img {
-    height: 380px !important;
+    width: 24%;
   }
 
   .card_five_and_six {
-    width: 23%;
-    justify-content: space-between;
+    width: 22%;
   }
-
   /*###############################################*/
   /*################## footers ####################*/
   /*###############################################*/
@@ -695,5 +610,70 @@ footer h3 {
   footer div {
     width: 33%;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*###############################################*/
+  /*################## Hearder ####################*/
+  /*###############################################*/
+
+  header,
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  header img {
+    justify-content: flex-start !important;
+  }
+
+  header a {
+    order: 1;
+    justify-content: flex-end;
+  }
+
+  header nav {
+    flex-basis: 0 !important;
+  }
+
+  header nav ul li {
+    border-top: 3px solid #f2f2f2;
+    border-bottom: none;
+    margin-right: 4rem;
+  }
+
+  header nav ul li:hover {
+    border-top: 3px solid #0065fc;
+    border-bottom: none;
+  }
+
+  /*###############################################*/
+  /*###### Hebergement et les plus populaires #####*/
+  /*###############################################*/
+  .accommodation_and_popular {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /*###############################################*/
+  /*############# les plus populaires #############*/
+  /*###############################################*/
+
+  #popular article {
+    width: 100%;
+  }
+
+  /*###############################################*/
+  /*################## footers ####################*/
+  /*###############################################*/
+
+  footer {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  footer div {
+    text-align: start;
   }
 }
