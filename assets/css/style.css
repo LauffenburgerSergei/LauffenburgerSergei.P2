@@ -634,13 +634,16 @@ footer h3 {
   }
 
   header nav {
-    flex-basis: 0 !important;
+    flex-basis: unset !important;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: flex-end;
   }
 
   header nav ul li {
     border-top: 3px solid #f2f2f2;
     border-bottom: none;
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
 
   header nav ul li:hover {
