@@ -25,3 +25,21 @@
 .f-bas-100 {
   flex-basis: 100%;
 }
+
+.style_card {
+  box-shadow: 4px 4px 12px #e8e6e6;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scale_effect :hover {
+  transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transition: 0.2s;
+}

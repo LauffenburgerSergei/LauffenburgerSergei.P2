@@ -168,11 +168,7 @@ header nav ul li:hover > a {
 }
 
 #filters ul li:hover {
-  transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  -moz-transform: scale(1.02);
+ 
   background: #d6ecfd;
   border: 2px solid #d6ecfd;
   box-shadow: 0 15px 10px -15px black;
@@ -222,7 +218,7 @@ header nav ul li:hover > a {
   border-radius: 20px;
   margin: 10px 0;
   padding: 5px;
-  box-shadow: 4px 4px 6px #aaaaaa;
+
   width: 100%;
   flex-basis: 75%;
 }
@@ -260,6 +256,7 @@ header nav ul li:hover > a {
   -webkit-transform: scale(1.02);
   -o-transform: scale(1.02);
   -moz-transform: scale(1.02);
+  transition: 0.2s;
 }
 
 /*###############################################*/
@@ -271,7 +268,6 @@ header nav ul li:hover > a {
   border-radius: 20px;
   margin: 10px 0;
   padding: 5px;
-  box-shadow: 4px 4px 6px #aaaaaa;
 }
 
 #accommodation article a figure {
@@ -302,7 +298,6 @@ header nav ul li:hover > a {
   margin-top: auto;
   font-size: 0.7em;
   letter-spacing: 1px;
-  
 }
 
 #accommodation article a figure figcaption h3 {
@@ -319,6 +314,7 @@ header nav ul li:hover > a {
   -webkit-transform: scale(1.02);
   -o-transform: scale(1.02);
   -moz-transform: scale(1.02);
+  transition: 0.2s;
 }
 
 #accommodation > a {
@@ -334,7 +330,6 @@ header nav ul li:hover > a {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 5px #757373;
   border-radius: 1rem;
   margin-bottom: 25px;
 }
@@ -360,6 +355,7 @@ header nav ul li:hover > a {
   -webkit-transform: scale(1.02);
   -o-transform: scale(1.02);
   -moz-transform: scale(1.02);
+  transition: 0.2s;
 }
 
 /*###############################################*/
@@ -503,7 +499,7 @@ footer h3 {
   #popular article {
     flex-basis: 75%;
     align-items: center;
-    width: 75%;
+    width: 750px;
     align-self: center;
   }
 
@@ -525,9 +521,8 @@ footer h3 {
     flex-wrap: wrap;
   }
 
-  footer div {
-    width: 33%;
-    text-align: center;
+  .footer_info {
+    width: 100%;
   }
 }
 
@@ -583,18 +578,18 @@ footer h3 {
   /*###############################################*/
 
   .card_one {
-    width: 24%;
+    width: 23%;
   }
 
   .card_two_and_three {
-    width: 22%;
+    width: 23%;
   }
   .card_four {
-    width: 24%;
+    width: 23%;
   }
 
   .card_five_and_six {
-    width: 22%;
+    width: 23%;
   }
   /*###############################################*/
   /*################## footers ####################*/
@@ -607,9 +602,8 @@ footer h3 {
     justify-content: center;
   }
 
-  footer div {
-    width: 33%;
-    text-align: center;
+  .footer_info {
+    width: 100%;
   }
 }
 
@@ -652,6 +646,14 @@ footer h3 {
   }
 
   /*###############################################*/
+  /*################# Hébergement #################*/
+  /*###############################################*/
+
+  #accommodation {
+    width: 66%;
+  }
+
+  /*###############################################*/
   /*###### Hebergement et les plus populaires #####*/
   /*###############################################*/
   .accommodation_and_popular {
@@ -663,6 +665,10 @@ footer h3 {
   /*############# les plus populaires #############*/
   /*###############################################*/
 
+  #popular {
+    width: 33%;
+  }
+
   #popular article {
     width: 100%;
   }
@@ -672,8 +678,11 @@ footer h3 {
   /*###############################################*/
 
   footer {
-    max-width: 1400px;
     margin: auto;
+  }
+
+  .footer_info {
+    width: 1300px;
   }
 
   footer div {
