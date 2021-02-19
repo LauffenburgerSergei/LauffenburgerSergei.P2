@@ -208,6 +208,10 @@ header nav ul li:hover > a, header nav ul li.menu-active > a {
   flex-direction: column;
 }
 
+#popular h2 {
+  margin: 15px 0 0 5px;
+}
+
 #popular aside {
   display: flex;
 }
@@ -261,6 +265,10 @@ header nav ul li:hover > a, header nav ul li.menu-active > a {
 /*###############################################*/
 /*################# Hébergement #################*/
 /*###############################################*/
+
+#accommodation h2 {
+  margin: 15px 0 0 10px;
+}
 
 #accommodation article {
   background-color: #ffffff;
@@ -318,12 +326,16 @@ header nav ul li:hover > a, header nav ul li.menu-active > a {
 
 #accommodation > a {
   font-weight: bold;
-  margin-top: 1.5rem;
+  margin: 30px 15px 20px 15px;
 }
 
 /*###############################################*/
 /*################# activitées ##################*/
 /*###############################################*/
+
+#activity h2 {
+  padding: 30px 0 20px 15px;
+}
 
 .container-activity {
   display: flex;
