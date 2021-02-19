@@ -28,6 +28,9 @@
 
 .style_card {
   box-shadow: 4px 4px 12px #e8e6e6;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_info {

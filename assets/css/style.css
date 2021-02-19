@@ -82,11 +82,11 @@ header nav ul li {
   border-bottom: 3px solid #f2f2f2;
 }
 
-header nav ul li:hover {
+header nav ul li:hover, header nav ul li.menu-active {
   border-bottom: 3px solid #0065fc;
 }
 
-header nav ul li:hover > a {
+header nav ul li:hover > a, header nav ul li.menu-active > a {
   color: #0065fc;
 }
 
@@ -168,7 +168,6 @@ header nav ul li:hover > a {
 }
 
 #filters ul li:hover {
- 
   background: #d6ecfd;
   border: 2px solid #d6ecfd;
   box-shadow: 0 15px 10px -15px black;
@@ -326,6 +325,35 @@ header nav ul li:hover > a {
 /*################# activitées ##################*/
 /*###############################################*/
 
+.container-activity {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.activity-column {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-column.activity-column-double .style_card:first-child {
+  flex-grow: 3;
+}
+.activity-column.activity-column-double .style_card:nth-child(2) {
+  flex-grow: 2;
+}
+
+#activity article .activity-img {
+  flex: 1 1;
+  height: 100%;
+}
+
+#activity .activity-column-double .activity-img img {
+  max-height: 200px;
+}
+
 #activity article {
   background-color: #ffffff;
   display: flex;
@@ -333,14 +361,20 @@ header nav ul li:hover > a {
   border-radius: 1rem;
   margin-bottom: 25px;
 }
+
+#activity article a {
+  height: 100%;
+}
 #activity article a figure {
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
 #activity article a figure div {
   display: flex;
 }
 #activity article a figure div img {
-  height: 150px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -365,6 +399,10 @@ header nav ul li:hover > a {
 footer {
   padding: 20px 15px;
   background-color: #f2f2f2;
+}
+
+.footer_info {
+  flex-direction: column;
 }
 
 footer li {
@@ -402,62 +440,16 @@ footer h3 {
     flex-basis: 100%;
   }
 
+  #accommodation .style_card {
+    margin: 10px;
+  }
+
   /*###############################################*/
   /*################# activitées ##################*/
   /*###############################################*/
 
   #activity h2 {
     flex-basis: 100%;
-  }
-  #activity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .card_one {
-    width: 47%;
-    height: 432px;
-  }
-
-  .card_one figure {
-    height: 432px;
-  }
-
-  .card_one article a figure div img {
-    height: 380px !important;
-  }
-
-  .card_two_and_three {
-    width: 47%;
-    justify-content: space-between;
-  }
-
-  .card_two_img {
-    height: 185px !important;
-  }
-
-  .card_three_img {
-    height: 115px !important;
-  }
-
-  .card_four {
-    width: 47%;
-    height: 432px;
-  }
-
-  .card_four figure {
-    height: 432px;
-  }
-
-  .card_four article a figure div img {
-    height: 380px !important;
-  }
-
-  .card_five_and_six {
-    width: 47%;
-    justify-content: space-between;
   }
 
   /*###############################################*/
@@ -509,6 +501,14 @@ footer h3 {
 
   #accommodation article {
     flex-basis: 30%;
+  }
+
+  /*###############################################*/
+  /*################# activitées ##################*/
+  /*###############################################*/
+
+  .activity-column {
+    width: 50%;
   }
 
   /*###############################################*/
@@ -577,19 +577,8 @@ footer h3 {
   /*################# activitées ##################*/
   /*###############################################*/
 
-  .card_one {
-    width: 23%;
-  }
-
-  .card_two_and_three {
-    width: 23%;
-  }
-  .card_four {
-    width: 23%;
-  }
-
-  .card_five_and_six {
-    width: 23%;
+  .activity-column {
+    width: 25%;
   }
   /*###############################################*/
   /*################## footers ####################*/
@@ -604,6 +593,7 @@ footer h3 {
 
   .footer_info {
     width: 100%;
+    flex-direction: row;
   }
 }
 
@@ -640,7 +630,7 @@ footer h3 {
     margin-right: 3rem;
   }
 
-  header nav ul li:hover {
+  header nav ul li:hover, header nav ul li.menu-active {
     border-top: 3px solid #0065fc;
     border-bottom: none;
   }
@@ -671,6 +661,14 @@ footer h3 {
 
   #popular article {
     width: 100%;
+  }
+
+  /*###############################################*/
+  /*################# activitées ##################*/
+  /*###############################################*/
+
+  #activity .activity-column-double .activity-img img {
+    max-height: 300px;
   }
 
   /*###############################################*/

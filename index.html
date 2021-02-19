@@ -22,7 +22,7 @@
     <a href="#">S'inscrire</a>
     <nav class="f-bas-100">
       <ul class="d-flex jus-cont-spa-bet">
-        <li>
+        <li class="menu-active">
           <a href="#accommodation">Hébergements</a>
         </li>
         <li>
@@ -145,6 +145,7 @@
       <!--Hébergements-->
       <section id="accommodation" class="d-flex f-dir-col">
         <h2>Hébergements à Marseille</h2>
+
         <article class="d-flex f-dir-col style_card">
           <a href="#">
             <figure>
@@ -276,6 +277,7 @@
             </figure>
           </a>
         </article>
+
         <a href="#">Afficher plus</a>
       </section>
     </div>
@@ -286,95 +288,103 @@
       <h2>Activités à Marseille
         <!--icon-->
       </h2>
-      <div class="card_one">
-        <article class="style_card">
-          <a href="#">
-            <figure>
-              <div>
-                <img src="./assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                  alt="vieux port" />
-              </div>
-              <figcaption>
-                <h3>Vieux Port</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-      </div>
+      <div class="container-activity">
+        <div class="activity-column">
+          <article class="style_card">
+            <a href="#">
+              <figure>
+                <div class="activity-img">
+                  <img src="./assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    alt="vieux port" />
+                </div>
+                <figcaption>
+                  <h3>Vieux Port</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </div>
 
-      <div class="card_two_and_three">
-        <article class="style_card">
-          <a href="#">
-            <figure>
-              <div>
-                <img class="card_two_img" src="./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                  alt="Fort militaire" />
-              </div>
-              <figcaption>
-                <h3>Fort de Pomégues</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
+        <div class="activity-column activity-column-double">
+          <article class="style_card">
+            <a href="#">
+              <figure>
+                <div class="activity-img">
 
-        <article class="style_card">
-          <a href="#">
-            <figure>
-              <div>
-                <img class="card_three_img"
-                  src="./assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="vue sur la mer" />
-              </div>
-              <figcaption>
-                <h3>Iles du Frioul</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-      </div>
+                  <img class="card_two_img"
+                    src="./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    alt="Fort militaire" />
+                </div>
+                <figcaption>
+                  <h3>Fort de Pomégues</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
 
-      <div class="card_four">
-        <article class="style_card">
-          <a href="#">
-            <figure>
-              <div>
-                <img src="./assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="les Calanques" />
-              </div>
-              <figcaption>
-                <h3>Parc National des Calanques</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
-      </div>
+          <article class="style_card">
+            <a href="#">
+              <figure>
+                <div class="activity-img">
 
-      <div class="card_five_and_six">
-        <article class="style_card">
-          <a href="#">
-            <figure>
-              <div>
-                <img src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="église de marseille" />
-              </div>
-              <figcaption>
-                <h3>Notre Dame-de-la-Garde</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
+                  <img class="card_three_img"
+                    src="./assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt="vue sur la mer" />
+                </div>
+                <figcaption>
+                  <h3>Iles du Frioul</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </div>
 
-        <article class="style_card">
-          <a href="#">
-            <figure>
-              <div>
-                <img src="./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument" />
-              </div>
-              <figcaption>
-                <h3>Parc Longchamp</h3>
-              </figcaption>
-            </figure>
-          </a>
-        </article>
+        <div class="activity-column">
+          <article class="style_card">
+            <a href="#">
+              <figure>
+                <div class="activity-img">
+
+                  <img src="./assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    alt="les Calanques" />
+                </div>
+                <figcaption>
+                  <h3>Parc National des Calanques</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </div>
+
+        <div class="activity-column activity-column-double">
+          <article class="style_card">
+            <a href="#">
+              <figure>
+                <div class="activity-img">
+
+                  <img src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="église de marseille" />
+                </div>
+                <figcaption>
+                  <h3>Notre Dame-de-la-Garde</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+
+          <article class="style_card">
+            <a href="#">
+              <figure>
+                <div>
+                  <img src="./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument" />
+                </div>
+                <figcaption>
+                  <h3>Parc Longchamp</h3>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </div>
       </div>
     </section>
   </main>
